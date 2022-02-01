@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <script src = "Beau.js"></script>
+  <link rel = "stylesheet" href = "Beau.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+ <p id = "title">
+  ALL the Rectangles have been generated.
+  <br>
+  There were 3 random rectangles with the goldenratio proportion.
+  <br>
+  You correctly identified  
+   <b><span id = "rectNum"></span></b>
+  out of 3 Golden RECTS....
+  <br><br>
+  Try Again?...
+ </p>
+
+ <div id = "cenButtons">
+  <input type = "button" class = "otherButtons" value = "Again?" onclick = " window.location.href = 'DoYouKnowBeauty.html';">
+ </div>
+
+ <script>
+   document.getElementById('rectNum').innerHTML = localStorage.getItem("TheTotalCorrect");
+ </script>
+</body>
+</html>
