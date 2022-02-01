@@ -1,0 +1,30 @@
+<html>
+ <head>
+   <title>Beau</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src = "Beau.js"></script>
+   <link rel = "stylesheet" href = "Beau.css">
+   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans" rel="stylesheet">
+ </head>
+
+ 
+ <body onload = "randomizeArray()">
+
+    <p id = "title">
+      <b>Do you know Beauty?</b>
+    </p>
+   
+    <canvas id="myCanvas" width="550" height="550" style="border:25px solid #000000;">
+    </canvas>
+	
+	<br>
+	
+    <div id = "cenButtons">
+	  <input type = "button" id = "goldenButton" value = "YES! Beautiful!" onclick = "makeRect()">
+	  <input type = "button" class = "otherButtons" value = "UMMmm..Like Not so Beautiful!" onclick = "makeRect()">
+	</div>
+	
+	<!--Start the program with a random rectangle loaded-->
+	<script>genNormRect();</script>
+ </body>
+</html>
